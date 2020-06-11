@@ -17,13 +17,15 @@
   <nav>
     <ul class="nav justify-content-center">
       <li class="nav-item">
-        <a class="nav-link" href="#"><img src="img/sketch.png" alt="home"></a>
+        <a class="nav-link" href="#"><img data-tippy-content="Home" src="img/sketch.png" alt="home"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><img src="img/code-school-symbol-sketch.png" alt="porjects"></a>
+        <a class="nav-link" href="#"><img data-tippy-content="Projects" src="img/code-school-symbol-sketch.png"
+            alt="porjects"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><img src="img/contact-sketched-social-symbol.png" alt="contact"></a>
+        <a class="nav-link" href="#"><img data-tippy-content="Contact" src="img/contact-sketched-social-symbol.png"
+            alt="contact"></a>
       </li>
     </ul>
   </nav>
@@ -51,29 +53,25 @@
       <div class="col-5">
         <wired-image class="m-3" elevation="10" src="img/IMG_20200106_085121_3.jpg"></wired-image>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item"><a class="no-decorations" href="#"><img src="img/octocat.png" alt="github logo">
-              GitHub</a></li>
+          <li class="list-group-item"><a class="no-decorations" href="#"><img src="img/octocat.png"
+                alt="github logo">&nbsp;&nbsp;&nbsp;GitHub</a></li>
           <li class="list-group-item"><a class="no-decorations" href="#"><img src="img/linkedin.png"
-                alt="linkedin logo"> LinkedIn</a></li>
+                alt="linkedin logo">&nbsp;&nbsp;&nbsp;LinkedIn</a></li>
           <li class="list-group-item"><a class="no-decorations" href="cv.pdf"><img src="img/sketched-social.png"
-                alt="linkedin logo"> Check out my CV</a></li>
+                alt="linkedin logo">&nbsp;&nbsp;&nbsp;Check out my CV</a></li>
           </a></li>
 
         </ul>
       </div>
 
     </div>
-    <button id="button" aria-describedby="tooltip">My button</button>
-    <div id="tooltip" role="tooltip">
-      My tooltip
-      <div id="arrow" data-popper-arrow></div>
-    </div>
 
   </div>
 
 
   <script src="https://unpkg.com/wired-elements@latest/lib/wired-elements-bundled.js"></script>
-  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
   <script src="scripts.js"></script>
 </body>
 
