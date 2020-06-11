@@ -30,15 +30,13 @@
     </ul>
   </nav>
 
-
-
+  <wired-divider elevation="2"></wired-divider>
+  <br>
 
   <div class="container">
+    <div class="row row-cols-1 row-cols-md-2">
 
-    <wired-divider elevation="2"></wired-divider>
-    <div class="row">
-      <div class="col-7 align-self-center">
-
+      <div class="col align-self-center">
         <h1 class="mb-4">&lt;h1></h1>
         <h1 class="pl-5">Hi,<br>I'm Mattia<br>Junior Web Developer</h1>
         <h1 class="mt-4">&lt;/h1></h1>
@@ -49,8 +47,9 @@
           utilize my skills.
         </p>
         <p class="m-2">&lt;/p></p>
-      </div>
-      <div class="col-5">
+      </div> <!-- Left col -->
+
+      <div class="col">
         <wired-image class="m-3" elevation="10" src="img/IMG_20200106_085121_3.jpg"></wired-image>
         <ul class="list-group list-group-flush">
           <li class="list-group-item"><a class="no-decorations" href="#"><img src="img/octocat.png"
@@ -60,13 +59,84 @@
           <li class="list-group-item"><a class="no-decorations" href="cv.pdf"><img src="img/sketched-social.png"
                 alt="linkedin logo">&nbsp;&nbsp;&nbsp;Check out my CV</a></li>
           </a></li>
-
         </ul>
+      </div> <!-- Right col -->
+
+    </div> <!-- Row -->
+  </div> <!-- Container -->
+
+
+  <br>
+  <wired-divider elevation="8"></wired-divider>
+  <br>
+
+  <div class="container">
+    <h2 class="mb-4">&lt;h2></h2>
+    <h2 class="pl-5">Projects</h2>
+    <h2 class="mt-4 mb-5">&lt;/h2></h2>
+
+
+
+    <div class="row row-cols-1 row-cols-md-2">
+
+      <div class="col mb-4">
+        <wired-card class="h-100" elevation="9">
+          <h4>Pomodoro-Timer &nbsp;&nbsp;&nbsp;🍅🍅🍅</h4>
+          <wired-image class="m-1" elevation="2" src="img/pomodoro.png"></wired-image>
+          <p>
+            A mobile resoponsive pomodoro timer here to help you be more productive.
+          </p>
+          <ul class=" nav justify-content-start">
+            <li class="nav-item">
+              <a class="nav-link" href="https://tiapnn.github.io/Pomodoro-Timer/" ><img data-tippy-content="Home" src="img/sketch.png" alt="home"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img data-tippy-content="Projects" src="img/code-school-symbol-sketch.png"
+                  alt="porjects"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img data-tippy-content="Contact" src="img/contact-sketched-social-symbol.png"
+                  alt="contact"></a>
+            </li>
+          </ul>
+        </wired-card>
       </div>
 
-    </div>
 
-  </div>
+
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a short card.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Container -->
+
+
 
 
   <script src="https://unpkg.com/wired-elements@latest/lib/wired-elements-bundled.js"></script>
