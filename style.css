@@ -1,4 +1,69 @@
 body {
-  background: url('https://www.qsl.net/g0yce/images/work-in-progress.gif');
-  background-size: cover;
+  font-family: 'Cabin Sketch', cursive;
+  /* font-family: 'Londrina Sketch', cursive; */
+  font-size: xx-large;
+}
+
+nav {
+  margin: auto;
+}
+nav li img {
+  height: 50px;
+}
+
+li img {
+  height: 20px;
+
+}
+
+.no-decorations{
+  color: unset;
+  text-decoration: none;
+}
+
+
+/* tooltip */
+
+#tooltip {
+  background: #333;
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px;
+  font-size: 13px;
+  border-radius: 4px;
+  display: none;
+}
+
+#tooltip[data-show] {
+  display: block;
+}
+
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  z-index: -1;
+}
+
+#arrow::before {
+  content: '';
+  transform: rotate(45deg);
+  background: #333;
+}
+
+#tooltip[data-popper-placement^='top'] > #arrow {
+  bottom: -4px;
+}
+
+#tooltip[data-popper-placement^='bottom'] > #arrow {
+  top: -4px;
+}
+
+#tooltip[data-popper-placement^='left'] > #arrow {
+  right: -4px;
+}
+
+#tooltip[data-popper-placement^='right'] > #arrow {
+  left: -4px;
 }

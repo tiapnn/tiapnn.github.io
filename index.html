@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Londrina+Sketch&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
   <title>Mattia Penna Portfolio</title>
 </head>
+
 <body>
+
+  <nav>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img src="img/sketch.png" alt="home"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img src="img/code-school-symbol-sketch.png" alt="porjects"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img src="img/contact-sketched-social-symbol.png" alt="contact"></a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+
+  <div class="container">
+
+    <wired-divider elevation="2"></wired-divider>
+    <div class="row">
+      <div class="col-7 align-self-center">
+
+        <h1 class="mb-4">&lt;h1></h1>
+        <h1 class="pl-5">Hi,<br>I'm Mattia<br>Junior Web Developer</h1>
+        <h1 class="mt-4">&lt;/h1></h1>
+        <br>
+        <p class="m-2">&lt;p></p>
+        <p class="pl-5">
+          An enthusiastic and proactive web developer from Italy. Seeking an internship or entry level job where I can
+          utilize my skills.
+        </p>
+        <p class="m-2">&lt;/p></p>
+      </div>
+      <div class="col-5">
+        <wired-image class="m-3" elevation="10" src="img/IMG_20200106_085121_3.jpg"></wired-image>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a class="no-decorations" href="#"><img src="img/octocat.png" alt="github logo">
+              GitHub</a></li>
+          <li class="list-group-item"><a class="no-decorations" href="#"><img src="img/linkedin.png"
+                alt="linkedin logo"> LinkedIn</a></li>
+          <li class="list-group-item"><a class="no-decorations" href="cv.pdf"><img src="img/sketched-social.png"
+                alt="linkedin logo"> Check out my CV</a></li>
+          </a></li>
+
+        </ul>
+      </div>
+
+    </div>
+    <button id="button" aria-describedby="tooltip">My button</button>
+    <div id="tooltip" role="tooltip">
+      My tooltip
+      <div id="arrow" data-popper-arrow></div>
+    </div>
+
+  </div>
+
+
+  <script src="https://unpkg.com/wired-elements@latest/lib/wired-elements-bundled.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="scripts.js"></script>
 </body>
+
 </html>
