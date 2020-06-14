@@ -8,6 +8,8 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Londrina+Sketch&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="/devicon-master/devicon.css">
+
   <link rel="stylesheet" href="style.css">
   <title>Mattia Penna Portfolio</title>
 </head>
@@ -17,7 +19,7 @@
   <nav>
     <ul class="nav justify-content-center">
       <li class="nav-item">
-        <a class="nav-link" href="#"><img data-tippy-content="Home" src="img/sketch.png" alt="home"></a>
+        <a class="nav-link" href="#"><img data-tippy-content="Home" src="img/hand.png" alt="home"></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#"><img data-tippy-content="Projects" src="img/code-school-symbol-sketch.png"
@@ -36,7 +38,7 @@
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
 
-      <div class="col align-self-center">
+      <div class="col align-self-center order-2 order-md-1">
         <h1 class="mb-4">&lt;h1></h1>
         <h1 class="pl-5">Hi,<br>I'm Mattia<br>Junior Web Developer</h1>
         <h1 class="mt-4">&lt;/h1></h1>
@@ -49,14 +51,14 @@
         <p class="m-2">&lt;/p></p>
       </div> <!-- Left col -->
 
-      <div class="col">
+      <div class="col order-1 order-md-2">
         <wired-image class="m-3" elevation="10" src="img/IMG_20200106_085121_3.jpg"></wired-image>
         <ul class="list-group list-group-flush">
           <li class="list-group-item"><a class="no-decorations" href="#"><img src="img/octocat.png"
                 alt="github logo">&nbsp;&nbsp;&nbsp;GitHub</a></li>
           <li class="list-group-item"><a class="no-decorations" href="#"><img src="img/linkedin.png"
                 alt="linkedin logo">&nbsp;&nbsp;&nbsp;LinkedIn</a></li>
-          <li class="list-group-item"><a class="no-decorations" href="cv.pdf"><img src="img/sketched-social.png"
+          <li class="list-group-item"><a class="no-decorations" href="cv.pdf"><img src="img/resume.png"
                 alt="linkedin logo">&nbsp;&nbsp;&nbsp;Check out my CV</a></li>
           </a></li>
         </ul>
@@ -76,7 +78,6 @@
     <h2 class="mt-4 mb-5">&lt;/h2></h2>
 
 
-
     <div class="row row-cols-1 row-cols-md-2">
 
       <div class="col mb-4">
@@ -86,57 +87,178 @@
           <p>
             A mobile resoponsive pomodoro timer here to help you be more productive.
           </p>
-          <ul class=" nav justify-content-start">
+          <h4>Tecnology stack</h4>
+          <ul class=" nav justify-content-around align-self-center">
             <li class="nav-item">
-              <a class="nav-link" href="https://tiapnn.github.io/Pomodoro-Timer/" ><img data-tippy-content="Home" src="img/sketch.png" alt="home"></a>
+              <i data-tippy-content="HTML5" class="devicon-html5-plain-wordmark"></i>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><img data-tippy-content="Projects" src="img/code-school-symbol-sketch.png"
-                  alt="porjects"></a>
+              <i data-tippy-content="CSS3" class="devicon-css3-plain-wordmark"></i>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><img data-tippy-content="Contact" src="img/contact-sketched-social-symbol.png"
-                  alt="contact"></a>
+              <i data-tippy-content="JavaScript" class="devicon-javascript-plain"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="Bootstrap" class="devicon-bootstrap-plain-wordmark"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="JQuery" class="devicon-jquery-plain-wordmark"></i>
             </li>
           </ul>
+          <wired-button class="d-flex justify-content-center">Check this project out</wired-button>
+        </wired-card>
+      </div>
+      <div class="col mb-4">
+        <wired-card class="h-100" elevation="9">
+          <h4>Pomodoro-Timer &nbsp;&nbsp;&nbsp;🍅🍅🍅</h4>
+          <wired-image class="m-1" elevation="2" src="img/pomodoro.png"></wired-image>
+
+          <p>
+            A mobile resoponsive pomodoro timer here to help you be more productive.
+          </p>
+          <ul class=" nav justify-content-around align-self-center">
+
+            <li class="nav-item">
+              <i data-tippy-content="HTML5" class="devicon-html5-plain-wordmark"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="CSS3" class="devicon-css3-plain-wordmark"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="JavaScript" class="devicon-javascript-plain"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="Bootstrap" class="devicon-bootstrap-plain-wordmark"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="JQuery" class="devicon-jquery-plain-wordmark"></i>
+            </li>
+          </ul>
+          <wired-button class="ml-auto">Check this project out</wired-button>
+
+
+        </wired-card>
+      </div>
+      <div class="col mb-4">
+        <wired-card class="h-100" elevation="9">
+          <h4>Pomodoro-Timer &nbsp;&nbsp;&nbsp;🍅🍅🍅</h4>
+          <wired-image class="m-1" elevation="2" src="img/pomodoro.png"></wired-image>
+          <p>
+            A mobile resoponsive pomodoro timer here to help you be more productive.
+          </p>
+          <ul class=" nav justify-content-around align-self-center">
+
+            <li class="nav-item">
+              <i data-tippy-content="HTML5" class="devicon-html5-plain-wordmark"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="CSS3" class="devicon-css3-plain-wordmark"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="JavaScript" class="devicon-javascript-plain"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="Bootstrap" class="devicon-bootstrap-plain-wordmark"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="JQuery" class="devicon-jquery-plain-wordmark"></i>
+            </li>
+            <li>
+              <wired-button class="ml-auto">Check this project out</wired-button>
+            </li>
+          </ul>
+
+        </wired-card>
+      </div>
+      <div class="col mb-4">
+        <wired-card class="h-100" elevation="9">
+          <h4>Pomodoro-Timer &nbsp;&nbsp;&nbsp;🍅🍅🍅</h4>
+          <wired-image class="m-1" elevation="2" src="img/pomodoro.png"></wired-image>
+          <p>
+            A mobile resoponsive pomodoro timer here to help you be more productive.
+          </p>
+          <ul class=" nav justify-content-around align-self-center">
+
+            <li class="nav-item">
+              <i data-tippy-content="HTML5" class="devicon-html5-plain-wordmark"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="CSS3" class="devicon-css3-plain-wordmark"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="JavaScript" class="devicon-javascript-plain"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="Bootstrap" class="devicon-bootstrap-plain-wordmark"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="JQuery" class="devicon-jquery-plain-wordmark"></i>
+            </li>
+            <li>
+              <wired-button class="ml-auto">Check this project out</wired-button>
+            </li>
+          </ul>
+
         </wired-card>
       </div>
 
-
-
-      <div class="col mb-4">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a short card.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-4">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-              content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-4">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
     </div>
   </div> <!-- Container -->
 
+  <br>
+  <wired-divider elevation="8"></wired-divider>
+  <br>
 
+  <div class="container">
+    <h2 class="mb-4">&lt;h2></h2>
+    <h2 class="pl-5">contact me</h2>
+    <h2 class="mt-4 mb-5">&lt;/h2></h2>
+
+
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col align-self-center order-2 order-md-1">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputName">Name</label>
+              <wired-input type="text" class="form-control border-0"  id="inputName" placeholder="Enter name"></wired-input>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputEmail">Email</label>
+              <wired-input type="email" class="form-control border-0" id="inputEmail" placeholder="Enter eMail"></wired-input>
+            </div>  
+          </div>
+          <div class="form-group">
+            <label for="inputSubject">Subject</label>
+            <wired-input type="text" class="form-control border-0"  id="inputSubject" placeholder="Enter subject"></wired-input>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <wired-textarea class="form-control border-0 h-100"  id="exampleFormControlTextarea1" rows="3" placeholder="Enter message"></wired-textarea>
+          </div>
+          <wired-button type="submit">Submit</wired-button>
+        </form>
+      </div>
+      <div class="col align-self-center order-1 order-md-2">
+        <p>Mattia Penna</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a class="no-decorations"><img src="img/sketch.png"
+                alt="location logo">&nbsp;&nbsp;&nbsp;Valencia, Spain</a></li>
+          <li class="list-group-item"><a class="no-decorations" href="tel:+34691969203"><img src="img/viber.png"
+                alt="mobile logo">&nbsp;&nbsp;&nbsp;+34 691969203</a></li>
+          <li class="list-group-item"><a class="no-decorations" href="mailto:tiapnn@yahoo.it"><img src="img/mail.png"
+                alt="mail logo">&nbsp;&nbsp;&nbsp;tiapnn@yahoo.it</a></li>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div> <!-- Container -->
 
 
   <script src="https://unpkg.com/wired-elements@latest/lib/wired-elements-bundled.js"></script>
