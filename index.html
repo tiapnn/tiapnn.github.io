@@ -6,60 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Londrina+Sketch&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Neucha&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/devicon-master/devicon.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
   <title>Mattia Penna Portfolio</title>
 </head>
 
 <body>
 
-  <nav>
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link" href="#"><img data-tippy-content="Home" src="img/hand.png" alt="home"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><img data-tippy-content="Projects" src="img/code-school-symbol-sketch.png"
-            alt="porjects"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><img data-tippy-content="Contact" src="img/contact-sketched-social-symbol.png"
-            alt="contact"></a>
-      </li>
-    </ul>
-  </nav>
 
-  <wired-divider elevation="2"></wired-divider>
-  <br>
+  <div class="sticky-top">
+    <nav class="navbar navbar-light bg-light justify-content-center">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img data-tippy-content="Home" src="img/hand.png" alt="Home" width="50"
+              height="50"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects"><img data-tippy-content="Projects"
+              src="img/code-school-symbol-sketch.png" alt="porjects" width="50" height="50"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact"><img data-tippy-content="Contact"
+              src="img/contact-sketched-social-symbol.png" alt="contact" width="50" height="50"></a>
+        </li>
+      </ul>
+    </nav>
+    <wired-divider elevation="2"></wired-divider>
+  </div>
+
+
 
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
 
       <div class="col align-self-center order-2 order-md-1">
-        <h1 class="mb-4">&lt;h1></h1>
+        <h1 class="tags"><strong>&lt;h1></strong></h1>
         <h1 class="pl-5">Hi,<br>I'm Mattia<br>Junior Web Developer</h1>
-        <h1 class="mt-4">&lt;/h1></h1>
-        <br>
-        <p class="m-2">&lt;p></p>
+        <h1 class="tags"><strong>&lt;h1></strong></h1>
+
+        <p class="tags"><strong>&lt;p></strong></p>
         <p class="pl-5">
-          An enthusiastic and proactive web developer from Italy. Seeking an internship or entry level job where I can
-          utilize my skills.
+          An enthusiastic and passionate italian web developer living in Spain. Seeking an internship or entry level
+          job.
         </p>
-        <p class="m-2">&lt;/p></p>
+        <p class="tags"><strong>&lt;p></strong></p>
       </div> <!-- Left col -->
 
-      <div class="col order-1 order-md-2">
-        <wired-image class="m-3" elevation="10" src="img/IMG_20200106_085121_3.jpg"></wired-image>
+      <div class="col order-1 order-md-2 text-center">
+        <wired-image class="m-4" elevation="10" src="img/IMG_20200106_085121_3.jpg"></wired-image>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item"><a class="no-decorations" href="#"><img src="img/octocat.png"
-                alt="github logo">&nbsp;&nbsp;&nbsp;GitHub</a></li>
-          <li class="list-group-item"><a class="no-decorations" href="#"><img src="img/linkedin.png"
-                alt="linkedin logo">&nbsp;&nbsp;&nbsp;LinkedIn</a></li>
-          <li class="list-group-item"><a class="no-decorations" href="cv.pdf"><img src="img/resume.png"
-                alt="linkedin logo">&nbsp;&nbsp;&nbsp;Check out my CV</a></li>
+          <li class="list-group-item grow"><a class="no-decorations" target="_blank"
+              href="https://github.com/tiapnn"><img src="img/octocat.png" alt="github logo" width="40"
+                height="40">&nbsp;&nbsp;&nbsp;GitHub</a></li>
+          <li class="list-group-item grow"><a class="no-decorations" target="_blank"
+              href="https://www.linkedin.com/in/tiapnn/"><img src="img/linkedin.png" alt="linkedin logo" width="40"
+                height="40">&nbsp;&nbsp;&nbsp;LinkedIn</a></li>
+          <li class="list-group-item grow"><a class="no-decorations" target="_blank" href="cv.pdf"><img
+                src="img/resume.png" alt="linkedin logo" width="40" height="40">&nbsp;&nbsp;&nbsp;My CV</a></li>
           </a></li>
         </ul>
       </div> <!-- Right col -->
@@ -68,27 +75,27 @@
   </div> <!-- Container -->
 
 
-  <br>
+  <br id="projects">
   <wired-divider elevation="8"></wired-divider>
   <br>
 
   <div class="container">
-    <h2 class="mb-4">&lt;h2></h2>
-    <h2 class="pl-5">Projects</h2>
-    <h2 class="mt-4 mb-5">&lt;/h2></h2>
+    <h1 class="mb-4 tags"><strong>&lt;h1></strong></h1>
+    <h1 class="pl-5">Projects</h1>
+    <h1 class="mt-4 mb-5 tags"><strong>&lt;h1></strong></h1>
 
 
     <div class="row row-cols-1 row-cols-md-2">
 
       <div class="col mb-4">
         <wired-card class="h-100" elevation="9">
-          <h4>Pomodoro-Timer &nbsp;&nbsp;&nbsp;🍅🍅🍅</h4>
+          <h2 class="text-center m-2"><strong>Pomodoro-Timer 🍅</strong> </h2>
           <wired-image class="m-1" elevation="2" src="img/pomodoro.png"></wired-image>
-          <p>
+          <p class="p-3">
             A mobile resoponsive pomodoro timer here to help you be more productive.
           </p>
-          <h4>Tecnology stack</h4>
-          <ul class=" nav justify-content-around align-self-center">
+          <h2 class="m-4 text-center"><strong><u>Tecnology stack</u></strong></h2>
+          <ul class="nav justify-content-center align-self-center">
             <li class="nav-item">
               <i data-tippy-content="HTML5" class="devicon-html5-plain-wordmark"></i>
             </li>
@@ -105,19 +112,27 @@
               <i data-tippy-content="JQuery" class="devicon-jquery-plain-wordmark"></i>
             </li>
           </ul>
-          <wired-button class="d-flex justify-content-center">Check this project out</wired-button>
+          <div class="d-flex justify-content-around text-center">
+            <a class="no-decorations" target="_blank" href="https://tiapnn.github.io/Pomodoro-Timer">
+              <wired-button class="mt-4 mb-2">View project</wired-button>
+            </a>
+            <a class="no-decorations" target="_blank" href="https://github.com/tiapnn/Pomodoro-Timer">
+              <wired-button class="mt-4 mb-2">View repo</wired-button>
+            </a>
+          </div>
+
         </wired-card>
       </div>
+
       <div class="col mb-4">
         <wired-card class="h-100" elevation="9">
-          <h4>Pomodoro-Timer &nbsp;&nbsp;&nbsp;🍅🍅🍅</h4>
-          <wired-image class="m-1" elevation="2" src="img/pomodoro.png"></wired-image>
-
-          <p>
-            A mobile resoponsive pomodoro timer here to help you be more productive.
+          <h2 class="text-center m-2"><strong>Stoic Quotes Generator 📜</strong> </h2>
+          <wired-image class="m-1" elevation="2" src="img/stoic.png"></wired-image>
+          <p class="p-3">
+            A stoic quotes generator to always keep you inspired.
           </p>
-          <ul class=" nav justify-content-around align-self-center">
-
+          <h2 class="m-4 text-center"><strong><u>Tecnology stack</u></strong></h2>
+          <ul class="nav justify-content-center align-self-center">
             <li class="nav-item">
               <i data-tippy-content="HTML5" class="devicon-html5-plain-wordmark"></i>
             </li>
@@ -134,20 +149,27 @@
               <i data-tippy-content="JQuery" class="devicon-jquery-plain-wordmark"></i>
             </li>
           </ul>
-          <wired-button class="ml-auto">Check this project out</wired-button>
-
+          <div class="d-flex justify-content-around text-center">
+            <a class="no-decorations" target="_blank" href="https://tiapnn.github.io/Stoic-Quotes-Generator">
+              <wired-button class="mt-4 mb-2">View project</wired-button>
+            </a>
+            <a class="no-decorations" target="_blank" href="https://github.com/tiapnn/Stoic-Quotes-Generator">
+              <wired-button class="mt-4 mb-2">View repo</wired-button>
+            </a>
+          </div>
 
         </wired-card>
       </div>
+
       <div class="col mb-4">
         <wired-card class="h-100" elevation="9">
-          <h4>Pomodoro-Timer &nbsp;&nbsp;&nbsp;🍅🍅🍅</h4>
-          <wired-image class="m-1" elevation="2" src="img/pomodoro.png"></wired-image>
-          <p>
-            A mobile resoponsive pomodoro timer here to help you be more productive.
+          <h2 class="text-center m-2"><strong>JS Calculator 🧮</strong> </h2>
+          <wired-image class="m-1" elevation="2" src="img/calc.png"></wired-image>
+          <p class="p-3">
+            A simple yet elegant Javascript calulator - mobile responsive.
           </p>
-          <ul class=" nav justify-content-around align-self-center">
-
+          <h2 class="m-4 text-center"><strong><u>Tecnology stack</u></strong></h2>
+          <ul class="nav justify-content-center align-self-center">
             <li class="nav-item">
               <i data-tippy-content="HTML5" class="devicon-html5-plain-wordmark"></i>
             </li>
@@ -163,22 +185,28 @@
             <li class="nav-item">
               <i data-tippy-content="JQuery" class="devicon-jquery-plain-wordmark"></i>
             </li>
-            <li>
-              <wired-button class="ml-auto">Check this project out</wired-button>
-            </li>
           </ul>
+          <div class="d-flex justify-content-around text-center">
+            <a class="no-decorations" target="_blank" href="https://tiapnn.github.io/JS-Calculator/">
+              <wired-button class="mt-4 mb-2">View project</wired-button>
+            </a>
+            <a class="no-decorations" target="_blank" href="https://github.com/tiapnn/JS-Calculator">
+              <wired-button class="mt-4 mb-2">View repo</wired-button>
+            </a>
+          </div>
 
         </wired-card>
       </div>
+
       <div class="col mb-4">
         <wired-card class="h-100" elevation="9">
-          <h4>Pomodoro-Timer &nbsp;&nbsp;&nbsp;🍅🍅🍅</h4>
-          <wired-image class="m-1" elevation="2" src="img/pomodoro.png"></wired-image>
-          <p>
-            A mobile resoponsive pomodoro timer here to help you be more productive.
+          <h2 class="text-center m-2"><strong>Tenerife App</strong> </h2>
+          <wired-image class="m-1" elevation="2" src="img/tene.png"></wired-image>
+          <p class="p-3">
+            A cross platform mobile app to discover top attractions in Tenerife. Still in development.
           </p>
-          <ul class=" nav justify-content-around align-self-center">
-
+          <h2 class="m-4 text-center"><strong><u>Tecnology stack</u></strong></h2>
+          <ul class="nav justify-content-center align-self-center">
             <li class="nav-item">
               <i data-tippy-content="HTML5" class="devicon-html5-plain-wordmark"></i>
             </li>
@@ -194,25 +222,47 @@
             <li class="nav-item">
               <i data-tippy-content="JQuery" class="devicon-jquery-plain-wordmark"></i>
             </li>
-            <li>
-              <wired-button class="ml-auto">Check this project out</wired-button>
+            <li class="nav-item">
+              <i data-tippy-content="MySql" class="devicon-mysql-plain-wordmark"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="PHP" class="devicon-php-plain"></i>
+            </li>
+            <li class="nav-item">
+              <i data-tippy-content="Apache Cordova" class="devicon-apache-line"></i>
             </li>
           </ul>
+          <h2 class="m-4 text-center"><strong><u>Team</u></strong></h2>
+          <div class="d-flex justify-content-around text-center">
+            <a class="no-decorations" target="_blank" href="https://github.com/andreapozza">
+              <wired-icon-button>
+                <img src="https://avatars3.githubusercontent.com/u/64172274" width="60"></img>&nbsp;&nbsp; Andrea
+              </wired-icon-button>
+            </a>
+            <a class="no-decorations" target="_blank" href="https://github.com/tiapnn">
+              <wired-icon-button>
+                <img src="img/IMG_20200106_085121_3.jpg" width="60"></img>&nbsp;&nbsp; Mattia
+              </wired-icon-button>
+            </a>
+          </div>
 
         </wired-card>
       </div>
+
+
+
 
     </div>
   </div> <!-- Container -->
 
-  <br>
+  <br id="contact">
   <wired-divider elevation="8"></wired-divider>
   <br>
 
   <div class="container">
-    <h2 class="mb-4">&lt;h2></h2>
-    <h2 class="pl-5">contact me</h2>
-    <h2 class="mt-4 mb-5">&lt;/h2></h2>
+    <h1 class="mb-4 tags"><strong>&lt;h1></strong></h1>
+    <h1 class="pl-5">Contact me</h1>
+    <h1 class="mt-4 mb-5 tags"><strong>&lt;h1></strong></h1>
 
 
     <div class="row row-cols-1 row-cols-md-2">
@@ -221,33 +271,38 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputName">Name</label>
-              <wired-input type="text" class="form-control border-0"  id="inputName" placeholder="Enter name"></wired-input>
+              <wired-input type="text" class="form-control border-0" id="inputName" placeholder="Enter name">
+              </wired-input>
             </div>
             <div class="form-group col-md-6">
               <label for="inputEmail">Email</label>
-              <wired-input type="email" class="form-control border-0" id="inputEmail" placeholder="Enter eMail"></wired-input>
-            </div>  
+              <wired-input type="email" class="form-control border-0" id="inputEmail" placeholder="Enter eMail">
+              </wired-input>
+            </div>
           </div>
           <div class="form-group">
             <label for="inputSubject">Subject</label>
-            <wired-input type="text" class="form-control border-0"  id="inputSubject" placeholder="Enter subject"></wired-input>
+            <wired-input type="text" class="form-control border-0" id="inputSubject" placeholder="Enter subject">
+            </wired-input>
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Message</label>
-            <wired-textarea class="form-control border-0 h-100"  id="exampleFormControlTextarea1" rows="3" placeholder="Enter message"></wired-textarea>
+            <wired-textarea class="form-control border-0 h-100" id="exampleFormControlTextarea1" rows="3"
+              placeholder="Enter message"></wired-textarea>
           </div>
-          <wired-button type="submit">Submit</wired-button>
+          <wired-button type="submit" class="text-center d-flex justify-content-center">&nbsp;&nbsp;&nbsp;Submit
+            form&nbsp;&nbsp;&nbsp;</wired-button>
         </form>
       </div>
-      <div class="col align-self-center order-1 order-md-2">
-        <p>Mattia Penna</p>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><a class="no-decorations"><img src="img/sketch.png"
-                alt="location logo">&nbsp;&nbsp;&nbsp;Valencia, Spain</a></li>
-          <li class="list-group-item"><a class="no-decorations" href="tel:+34691969203"><img src="img/viber.png"
-                alt="mobile logo">&nbsp;&nbsp;&nbsp;+34 691969203</a></li>
-          <li class="list-group-item"><a class="no-decorations" href="mailto:tiapnn@yahoo.it"><img src="img/mail.png"
-                alt="mail logo">&nbsp;&nbsp;&nbsp;tiapnn@yahoo.it</a></li>
+      <div class="col align-self-center order-1 order-md-2 mb-5">
+        <h1 class="text-center"><strong>Mattia Penna</strong></h1>
+        <ul class="list-group list-group-flush text-center">
+          <li class="list-group-item grow"><a class="no-decorations"><img src="img/sketch.png" alt="location logo"
+                width="40" height="40">&nbsp;&nbsp;&nbsp;Valencia, Spain</a></li>
+          <li class="list-group-item grow"><a class="no-decorations" href="tel:+34691969203"><img src="img/viber.png"
+                alt="mobile logo" width="40" height="40">&nbsp;&nbsp;&nbsp;+34 691969203</a></li>
+          <li class="list-group-item grow"><a class="no-decorations" href="mailto:tiapnn@yahoo.it"><img
+                src="img/mail.png" alt="mail logo" width="40" height="40">&nbsp;&nbsp;&nbsp;tiapnn@yahoo.it</a></li>
           </a></li>
         </ul>
       </div>
@@ -259,6 +314,32 @@
 
 
   </div> <!-- Container -->
+  <br>
+
+  <wired-divider elevation="2"></wired-divider>
+
+  <nav class="navbar navbar-light bg-light justify-content-start">
+    <a class="grow navbar-brand ml-5" target="_blank" href="https://github.com/tiapnn">
+      <img src="img/octocat.png" alt="github logo" width="30" height="30">
+    </a>
+    <a class="grow navbar-brand ml-5" target="_blank" href="https://www.linkedin.com/in/tiapnn/">
+      <img src="img/linkedin.png" alt="linkedin logo" width="30" height="30">
+    </a>
+    <div class="footer-quote ml-auto">
+      It’s not a bug – it’s an undocumented feature. (Anonymous)
+    </div>
+  </nav>
+
+
+
+
+
+  </div>
+
+
+
+
+
 
 
   <script src="https://unpkg.com/wired-elements@latest/lib/wired-elements-bundled.js"></script>

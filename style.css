@@ -1,21 +1,48 @@
 body {
+  font-size: 25px;
   font-family: 'Cabin Sketch', cursive;
-  font-size: 30px;
-}
-
-nav {
-  margin: auto;
-}
-
-nav li img {
-  height: 50px;
-}
-
-li img {
-  height: 30px;
 }
 
 .no-decorations {
   color: unset !important;
   text-decoration: none !important
+}
+
+i {
+  font-size: 3rem;
+  margin: 10px;
+  padding: 10px;
+}
+
+.tags {
+  font-size: 35px;
+  font-family: 'Cabin Sketch', cursive;
+  margin: 30px 0px 30px 0px;
+}
+
+.footer-quote {
+  display: inline;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-quote {
+    display: none;
+  }
+}
+
+.grow {
+  transition: all .1s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.2);
+  border: none;
+}
+
+.navbar a {
+  opacity: 0.6;
+}
+
+.navbar a:hover {
+  opacity: 1;
 }
