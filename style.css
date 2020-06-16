@@ -46,3 +46,7 @@ i {
 .navbar a:hover {
   opacity: 1;
 }
+
+#mno {
+  z-index: 1;
+}
