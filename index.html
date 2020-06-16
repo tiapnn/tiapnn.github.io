@@ -200,7 +200,7 @@
 
       <div class="col mb-4">
         <wired-card class="h-100" elevation="9">
-          <h2 class="text-center m-2"><strong>Tenerife App</strong> </h2>
+          <h2 class="text-center m-2"><strong>Tenerife App 🐦</strong> </h2>
           <wired-image class="m-1" elevation="2" src="img/tene.png"></wired-image>
           <p class="p-3">
             A cross platform mobile app to discover top attractions in Tenerife. Still in development.
@@ -261,36 +261,36 @@
 
   <div class="container">
     <h1 class="mb-4 tags"><strong>&lt;h1></strong></h1>
-    <h1 class="pl-5">Contact me</h1>
+    <h1 class="pl-5">Contact</h1>
     <h1 class="mt-4 mb-5 tags"><strong>&lt;h1></strong></h1>
 
 
     <div class="row row-cols-1 row-cols-md-2">
       <div class="col align-self-center order-2 order-md-1">
-        <form>
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputName">Name</label>
-              <wired-input type="text" class="form-control border-0" id="inputName" placeholder="Enter name">
+              <label for="name">Name</label>
+              <wired-input type="text" class="form-control border-0" id="name" placeholder="Enter name" name="name">
               </wired-input>
             </div>
             <div class="form-group col-md-6">
-              <label for="inputEmail">Email</label>
-              <wired-input type="email" class="form-control border-0" id="inputEmail" placeholder="Enter eMail">
+              <label for="email">Email</label>
+              <wired-input type="email" class="form-control border-0" id="email" placeholder="Enter email" name="email">
               </wired-input>
             </div>
           </div>
           <div class="form-group">
-            <label for="inputSubject">Subject</label>
-            <wired-input type="text" class="form-control border-0" id="inputSubject" placeholder="Enter subject">
+            <label for="subject">Subject</label>
+            <wired-input type="text" class="form-control border-0" id="subject" placeholder="Enter subject" name="subject" >
             </wired-input>
           </div>
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Message</label>
-            <wired-textarea class="form-control border-0 h-100" id="exampleFormControlTextarea1" rows="3"
-              placeholder="Enter message"></wired-textarea>
+            <label for="message">Message</label>
+            <wired-textarea class="form-control border-0 h-100" id="message" rows="3"
+              placeholder="Enter message" type="text" name="message"></wired-textarea>
           </div>
-          <wired-button type="submit" class="text-center d-flex justify-content-center">&nbsp;&nbsp;&nbsp;Submit
+          <wired-button type="submit" value="send" class="text-center d-flex justify-content-center">&nbsp;&nbsp;&nbsp;Submit
             form&nbsp;&nbsp;&nbsp;</wired-button>
         </form>
       </div>
@@ -326,7 +326,7 @@
       <img src="img/linkedin.png" alt="linkedin logo" width="30" height="30">
     </a>
     <div class="footer-quote ml-auto">
-      It’s not a bug – it’s an undocumented feature. (Anonymous)
+      "It’s not a bug – it’s an undocumented feature." (Anonymous)
     </div>
   </nav>
 
