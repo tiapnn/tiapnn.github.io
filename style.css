@@ -28,6 +28,10 @@ i {
   .footer-quote {
     display: none;
   }
+
+  #footer {
+    justify-content: center!important;
+  }
 }
 
 .grow {
@@ -47,6 +51,6 @@ i {
   opacity: 1;
 }
 
-#mno {
+#forma {
   z-index: 1;
 }

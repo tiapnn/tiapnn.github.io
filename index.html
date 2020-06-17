@@ -163,7 +163,7 @@
 
       <div class="col mb-4">
         <wired-card class="h-100" elevation="9">
-          <h2 class="text-center m-2"><strong>JS Calculator 🧮</strong> </h2>
+          <h2 class="text-center m-2"><strong>JS Calculator ➗</strong> </h2>
           <wired-image class="m-1" elevation="2" src="img/calc.png"></wired-image>
           <p class="p-3">
             A simple yet elegant Javascript calulator - mobile responsive.
@@ -233,7 +233,7 @@
             </li>
           </ul>
           <h2 class="m-4 text-center"><strong><u>Team</u></strong></h2>
-          <div class="d-flex justify-content-around text-center">
+          <div class="d-flex justify-content-around text-center mb-3">
             <a class="no-decorations" target="_blank" href="https://github.com/andreapozza">
               <wired-icon-button>
                 <img src="https://avatars3.githubusercontent.com/u/64172274" width="60"></img>&nbsp;&nbsp; Andrea
@@ -264,15 +264,14 @@
     <h1 class="pl-5">Contact</h1>
     <h1 class="mt-4 mb-5 tags"><strong>&lt;h1></strong></h1>
 
-
+<!-- Contact Form -->
     <div class="row row-cols-1 row-cols-md-2">
-      <div id="mno" class="col align-self-center order-2 order-md-1">
+      <div id="forma" class="col align-self-center order-2 order-md-1">
         <form action="mailto:tiapnn@yahoo.it" method="post" enctype="text/plain">
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="name">Name</label>
-              <wired-input type="text" class="form-control border-0" id="name" placeholder="Enter name" name="name">
-              </wired-input>
+              <wired-input type="text" class="form-control border-0" id="name" placeholder="Enter name" name="name" required>
             </div>
             <div class="form-group col-md-6">
               <label for="email">Email</label>
@@ -290,10 +289,18 @@
             <wired-textarea class="form-control border-0 h-100" id="message" rows="3"
               placeholder="Enter message" type="text" name="message"></wired-textarea>
           </div>
-          <wired-button type="submit" value="send" class="text-center d-flex justify-content-center">&nbsp;&nbsp;&nbsp;Submit
-            form&nbsp;&nbsp;&nbsp;</wired-button>
+          <wired-button type="submit" class="text-center d-flex justify-content-center border-0 m-auto">
+            &nbsp;&nbsp;&nbsp;Submit
+            form&nbsp;&nbsp;&nbsp;
+          </wired-button>
         </form>
       </div>
+
+<!-- End Contact Form -->
+
+
+
+
       <div class="col align-self-center order-1 order-md-2 mb-5">
         <h1 class="text-center"><strong>Mattia Penna</strong></h1>
         <ul class="list-group list-group-flush text-center">
@@ -310,15 +317,13 @@
 
 
 
-
-
-
+    
   </div> <!-- Container -->
   <br>
 
   <wired-divider elevation="2"></wired-divider>
 
-  <nav class="navbar navbar-light bg-light justify-content-start">
+  <nav id="footer" class="navbar navbar-light bg-light justify-content-start">
     <a class="grow navbar-brand ml-5" target="_blank" href="https://github.com/tiapnn">
       <img src="img/octocat.png" alt="github logo" width="30" height="30">
     </a>
@@ -341,7 +346,7 @@
 
 
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/wired-elements@latest/lib/wired-elements-bundled.js"></script>
   <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
   <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
