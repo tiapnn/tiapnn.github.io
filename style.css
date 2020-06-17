@@ -31,7 +31,9 @@ i {
 
   #footer {
     justify-content: center!important;
+    padding-left: 0px;
   }
+
 }
 
 .grow {
