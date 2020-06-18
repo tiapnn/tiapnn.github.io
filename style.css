@@ -56,3 +56,20 @@ i {
 #forma {
   z-index: 1;
 }
+
+.inputte {
+  border: 2px solid rgba(51,51,51,0.25);
+  border-radius: 255px 25px 225px 25px/25px 225px 25px 255px;
+  margin: auto;
+  padding: 10px;
+}
+
+.inputte:focus{
+    outline-offset: -2px;
+    color: #555;
+    background-color: #fff;
+    border-color: #333;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(51,51,51,0.25);
+}
+

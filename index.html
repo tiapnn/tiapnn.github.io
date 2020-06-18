@@ -114,10 +114,10 @@
           </ul>
           <div class="d-flex justify-content-around text-center">
             <a class="no-decorations" target="_blank" href="https://tiapnn.github.io/Pomodoro-Timer">
-              <wired-button class="mt-4 mb-2">View project</wired-button>
+              <wired-button class="mt-4 mb-2 grow">View project</wired-button>
             </a>
             <a class="no-decorations" target="_blank" href="https://github.com/tiapnn/Pomodoro-Timer">
-              <wired-button class="mt-4 mb-2">View repo</wired-button>
+              <wired-button class="mt-4 mb-2 grow">View repo</wired-button>
             </a>
           </div>
 
@@ -151,10 +151,10 @@
           </ul>
           <div class="d-flex justify-content-around text-center">
             <a class="no-decorations" target="_blank" href="https://tiapnn.github.io/Stoic-Quotes-Generator">
-              <wired-button class="mt-4 mb-2">View project</wired-button>
+              <wired-button class="mt-4 mb-2 grow">View project</wired-button>
             </a>
             <a class="no-decorations" target="_blank" href="https://github.com/tiapnn/Stoic-Quotes-Generator">
-              <wired-button class="mt-4 mb-2">View repo</wired-button>
+              <wired-button class="mt-4 mb-2 grow">View repo</wired-button>
             </a>
           </div>
 
@@ -188,10 +188,10 @@
           </ul>
           <div class="d-flex justify-content-around text-center">
             <a class="no-decorations" target="_blank" href="https://tiapnn.github.io/JS-Calculator/">
-              <wired-button class="mt-4 mb-2">View project</wired-button>
+              <wired-button class="mt-4 mb-2 grow">View project</wired-button>
             </a>
             <a class="no-decorations" target="_blank" href="https://github.com/tiapnn/JS-Calculator">
-              <wired-button class="mt-4 mb-2">View repo</wired-button>
+              <wired-button class="mt-4 mb-2 grow">View repo</wired-button>
             </a>
           </div>
 
@@ -235,12 +235,12 @@
           <h2 class="m-4 text-center"><strong><u>Team</u></strong></h2>
           <div class="d-flex justify-content-around text-center mb-3">
             <a class="no-decorations" target="_blank" href="https://github.com/andreapozza">
-              <wired-icon-button>
+              <wired-icon-button class="grow">
                 <img src="https://avatars3.githubusercontent.com/u/64172274" width="60"></img>&nbsp;&nbsp; Andrea
               </wired-icon-button>
             </a>
             <a class="no-decorations" target="_blank" href="https://github.com/tiapnn">
-              <wired-icon-button>
+              <wired-icon-button class="grow">
                 <img src="img/mp.jpg" width="60"></img>&nbsp;&nbsp; Mattia
               </wired-icon-button>
             </a>
@@ -271,35 +271,34 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="name">Name</label>
-              <wired-input type="text" class="form-control border-0" id="name" placeholder="Enter name" name="name"
+              <input type="text" class="form-control inputte" id="name" placeholder="Enter name" name="name"
                 required>
             </div>
             <div class="form-group col-md-6">
               <label for="email">Email</label>
-              <wired-input type="email" class="form-control border-0" id="email" placeholder="Enter email" name="email">
-              </wired-input>
+              <input type="email" class="form-control inputte" id="email" placeholder="Enter email" name="email">
             </div>
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
-            <wired-input type="text" class="form-control border-0" id="subject" placeholder="Enter subject"
+            <input type="text" class="form-control inputte" id="subject inputte" placeholder="Enter subject"
               name="subject">
-            </wired-input>
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <wired-textarea class="form-control border-0 h-100" id="message" rows="3" placeholder="Enter message"
-              type="text" name="message"></wired-textarea>
+            <textarea class="form-control h-100 inputte" id="message" rows="3" placeholder="Enter message"
+              type="text" name="message"></textarea>
           </div>
-          <wired-button type="submit" class="text-center d-flex justify-content-center border-0 m-auto">
+          <button type="submit" class="text-center d-flex justify-content-center border-0 m-auto grow">
+            <wired-button >
             &nbsp;&nbsp;&nbsp;Submit
             form&nbsp;&nbsp;&nbsp;
           </wired-button>
+          </button>
         </form>
       </div>
 
       <!-- End Contact Form -->
-
 
 
 
@@ -319,11 +318,12 @@
 
   
 
-  </div> <!-- Container -->
-  <br>
+  </div> <!-- End Container -->
 
+  <br>
   <wired-divider elevation="2"></wired-divider>
 
+  <!-- Footer -->
   <nav id="footer" class="navbar navbar-light bg-light justify-content-start">
     <a class="grow navbar-brand ml-5" target="_blank" href="https://github.com/tiapnn">
       <img src="img/octocat.png" alt="github logo" width="30" height="30">
@@ -335,12 +335,8 @@
       "It’s not a bug – it’s an undocumented feature." (Anonymous)
     </div>
   </nav>
+  <!-- End footer -->
 
-
-
-
-
-  </div>
 
 
 
