@@ -267,37 +267,38 @@
     <!-- Contact Form -->
     <div class="row row-cols-1 row-cols-md-2">
       <div class="col align-self-center order-2 order-md-1 uppery">
-        <div>
+        <form action="javascript:void(0);">
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="name">Name</label>
               <input type="text" class="form-control inputte" id="name" placeholder="Enter name" name="name"
-                required>
+                pattern='[A-Za-z\\\s]*' required>
             </div>
             <div class="form-group col-md-6">
               <label for="email">Email</label>
-              <input type="email" class="form-control inputte" id="email" placeholder="Enter email" name="email" required>
+              <input type="email" class="form-control inputte" id="email" placeholder="Enter email" name="email"
+                required>
             </div>
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" class="form-control inputte" id="subject inputte" placeholder="Enter subject"
-              name="subject">
+            <input type="text" class="form-control inputte" id="subject" placeholder="Enter subject" name="subject"
+              pattern='[0-9A-Za-z\\\s]*'>
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea class="form-control h-100 inputte" id="message" rows="4" placeholder="Enter message"
-              type="text" name="message" required></textarea>
+            <textarea class="form-control h-100 inputte" id="message" rows="4" placeholder="Enter message" type="text"
+              name="message" required></textarea>
           </div>
-          <button type="submit" class="text-center d-flex justify-content-center border-0 m-auto grow">
-            <wired-button >
-            &nbsp;&nbsp;&nbsp;Submit
-            form&nbsp;&nbsp;&nbsp;
-          </wired-button>
+          <button id="sendForm" type="submit" class="text-center d-flex justify-content-center border-0 m-auto grow">
+            <wired-button>
+              &nbsp;&nbsp;&nbsp;Submit
+              form&nbsp;&nbsp;&nbsp;
+            </wired-button>
           </button>
-        </div>
+        </form>
       </div>
-
+    
       <!-- End Contact Form -->
 
 
@@ -316,7 +317,7 @@
       </div>
     </div>
 
-  
+
 
   </div> <!-- End Container -->
 
@@ -353,7 +354,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/wired-elements@latest/lib/wired-elements-bundled.js"></script>
+  <script src="https://unpkg.com/wired-elements@1.0.0/lib/wired-elements-bundled.js"></script>
   <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
   <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
   <script src="scripts.js"></script>
