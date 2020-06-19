@@ -53,13 +53,13 @@ i {
   opacity: 1;
 }
 
-#forma {
+.uppery {
   z-index: 1;
 }
 
 .inputte {
   border: 2px solid rgba(51,51,51,0.25);
-  border-radius: 255px 25px 225px 25px/25px 225px 25px 255px;
+  border-radius: 255px 55px 225px 55px/35px 225px 55px 255px;
   margin: auto;
   padding: 10px;
 }
