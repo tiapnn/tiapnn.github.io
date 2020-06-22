@@ -1,6 +1,6 @@
 tippy('[data-tippy-content]');
 
-var _ip_server = 'https://mattia-penna-backend-services.000webhostapp.com/services/form.php'; //000webhostapp.com
+var serverBEnd = 'https://mattia-penna-backend-services.000webhostapp.com/services/form.php'; //000webhostapp.com
 
 $('#sendForm').click(() => {
     if (!$('input:invalid').length && !$('textarea:invalid').length) {
@@ -9,6 +9,7 @@ $('#sendForm').click(() => {
         let email = $('#email').val();
         let subject = $('#subject').val();
         let message = $('#message').val();
+
         console.group()
         console.log(name);
         console.log(email);
@@ -16,8 +17,15 @@ $('#sendForm').click(() => {
         console.log(message);
         console.groupEnd()
 
+        //send animation
+        $('#spinner').toggle();
+        $('#confmsg').html('');
+        $('button').attr("disabled", true);
+        $('button').removeClass("grow");
+
+
         //sending post to backend service
-        $.post(_ip_server, { "name": name, "email": email, "subject": subject, "message": message })
+        $.post(serverBEnd, { "name": name, "email": email, "subject": subject, "message": message })
             .done(function (risposta) {
                 console.log(risposta)
             })
@@ -29,13 +37,32 @@ $('#sendForm').click(() => {
                 console.groupEnd()
             })
 
-        //clearing input after send
         setTimeout(() => {
+            //clearing input after send
             $('#name').val("");
             $('#email').val("");
             $('#subject').val("");
             $('#message').val("");
-        }, 500);
+
+            //success message 
+            $('button').attr("disabled", false);
+            $('#spinner').toggle();
+            $('#confmsg').html('Form sent successfully!')
+            $('#tick').toggle();
+        }, 3000);
+
+        setTimeout(() => {
+            $('#tick').toggle();
+            $('#confmsg').html("Submit form")
+            $('button').addClass("grow");
+
+        }, 5000);
+
+
+
+
+
+
 
 
 

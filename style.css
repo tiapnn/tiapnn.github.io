@@ -28,12 +28,10 @@ i {
   .footer-quote {
     display: none;
   }
-
   #footer {
     justify-content: center!important;
     padding-left: 0px;
   }
-
 }
 
 .grow {
@@ -58,18 +56,26 @@ i {
 }
 
 .inputte {
-  border: 2px solid rgba(51,51,51,0.25);
+  border: 2px solid rgba(51, 51, 51, 0.25);
   border-radius: 255px 55px 225px 55px/35px 225px 55px 255px;
   margin: auto;
   padding: 10px;
 }
 
-.inputte:focus{
-    outline-offset: -2px;
-    color: #555;
-    background-color: #fff;
-    border-color: #333;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(51,51,51,0.25);
+.inputte:focus {
+  outline-offset: -2px;
+  color: #555;
+  background-color: #fff;
+  border-color: #333;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(51, 51, 51, 0.25);
 }
 
+#spinner {
+  transform: scale(0.7);
+  display: none;
+}
+
+#tick {
+  display: none;
+}
