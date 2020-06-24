@@ -28,6 +28,28 @@ $('#sendForm').click(() => {
         $.post(serverBEnd, { "name": name, "email": email, "subject": subject, "message": message })
             .done(function (risposta) {
                 console.log(risposta)
+
+                setTimeout(() => {
+                    //clearing input after send
+                    $('#name').val("");
+                    $('#email').val("");
+                    $('#subject').val("");
+                    $('#message').val("");
+        
+                    //success message 
+                    $('button').attr("disabled", false);
+                    $('#spinner').toggle();
+                    $('#confmsg').html(risposta);
+                    $('#tick').toggle();
+                }, 3000);
+        
+                setTimeout(() => {
+                    $('#tick').toggle();
+                    $('#confmsg').html("Submit form")
+                    $('button').addClass("grow");
+        
+                }, 5000);
+
             })
             .fail((xhr, status, error) => {
                 console.group()
@@ -37,26 +59,7 @@ $('#sendForm').click(() => {
                 console.groupEnd()
             })
 
-        setTimeout(() => {
-            //clearing input after send
-            $('#name').val("");
-            $('#email').val("");
-            $('#subject').val("");
-            $('#message').val("");
-
-            //success message 
-            $('button').attr("disabled", false);
-            $('#spinner').toggle();
-            $('#confmsg').html('Form sent successfully!')
-            $('#tick').toggle();
-        }, 3000);
-
-        setTimeout(() => {
-            $('#tick').toggle();
-            $('#confmsg').html("Submit form")
-            $('button').addClass("grow");
-
-        }, 5000);
+        
 
 
 
